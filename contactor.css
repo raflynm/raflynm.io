@@ -1,0 +1,177 @@
+@font-face {
+    font-family: SanFrancisco;
+    src: url(Fonts/SFUIText-RegularG2.otf);
+}
+
+@font-face{
+    font-family: LightFrancisco;
+    src : url(Fonts/SFUIDisplay-Light.ttf);
+}
+
+@font-face{
+    font-family: UniSans;
+    src: url(Fonts/Uni-Sans.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: SanFrancisco;
+    color:white;
+}
+
+nav{
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color:rgb(18, 18, 18);
+    justify-content: space-between;
+    font-family: LightFrancisco;
+    align-items:center;
+    height: 60px;
+}
+
+nav .navtitle{
+    margin-left: 13px;
+    font-family: UniSans;
+    letter-spacing: 3px;
+}
+
+nav ul{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: rgb(145, 145, 145);
+    justify-content: space-around;
+    text-decoration: none;
+    margin-right: 13px;
+}
+
+nav ul li a:hover{
+    color: rgb(214, 214, 214);
+}
+
+.contitle{
+    color: rgb(219, 219, 219);
+    padding-top: 80px;
+    align-items: center;
+}
+
+.contitle h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+@keyframes fadeInRite{
+    0% {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0px);
+    }
+  }
+
+.condesc{
+    max-width: 10%;
+    padding-top: 240px;
+    padding-left: 35%;
+    animation: fadeInRite ease-in 0.5s;
+}
+
+.condesc p{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.wrapper{
+    margin-left: 47%;
+    margin-top: -250px;
+}
+
+.platforms{
+    position: static;
+}
+.linkedin{
+    display: flex;
+    align-items: center;
+}
+
+.linkedin a img{
+    width: 35%;
+    opacity: 70%;
+    transition: opacity ease 200ms;
+}
+
+.linkedin a img:hover{
+    opacity: 1;
+    filter: sepia();
+}
+
+.instagram{
+    margin-top: -15.5%;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+}
+
+.instagram a img{
+    width: 50%;
+    opacity: 70%;
+    transition: opacity ease 200ms;
+}
+
+.instagram a img:hover{
+    opacity: 1;
+    filter: sepia();
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 2.5%;
+}
+
+.line a img{
+    width: 50%;
+    opacity: 70%;
+    transition: opacity ease 200ms;
+}
+
+.line a img:hover{
+    opacity: 1;
+    filter: sepia();
+}
+
+.wapp{
+    display: flex;
+    padding-left: 20%;
+    margin-top: -13%;
+    align-items: center;
+}
+
+.wapp a img{
+    width: 50%;
+    opacity: 70%;
+    transition: opacity ease 200ms;
+}
+
+.wapp a img:hover{
+    opacity: 1;
+    filter: sepia();
+}

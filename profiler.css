@@ -1,0 +1,102 @@
+@font-face {
+    font-family: SanFrancisco;
+    src: url(Fonts/SFUIText-RegularG2.otf);
+}
+
+@font-face{
+    font-family: LightFrancisco;
+    src : url(Fonts/SFUIDisplay-Light.ttf);
+}
+
+@font-face{
+    font-family: UniSans;
+    src: url(Fonts/Uni-Sans.otf);
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:rgb(219, 219, 219);
+    overflow-y:hidden;
+}
+
+nav{
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color:rgb(18, 18, 18);
+    justify-content: space-between;
+    font-family: LightFrancisco;
+    align-items:center;
+    height: 60px;
+}
+
+nav .navtitle{
+    margin-left: 13px;
+    font-family: UniSans;
+    letter-spacing: 3px;
+}
+
+nav ul{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: rgb(145, 145, 145);
+    justify-content: space-around;
+    text-decoration: none;
+    margin-right: 13px;
+}
+
+nav ul li a:hover{
+    color: rgb(214, 214, 214);
+}
+
+.description{
+   padding-top: 100px;
+}
+
+.description h1{
+    font-family: SanFrancisco;
+    font-size: 60px;
+    text-align: center;
+}
+
+.description p{
+    display: flex;
+    padding-top: px;
+    padding-left: 47.75%;
+    padding-top: 30px ;
+    font-family: LightFrancisco;
+    font-size: 25px;
+    max-width: 25%;
+    text-align: justify;
+}
+
+.mypic img{
+    position: absolute;
+    padding-left: 10%;
+    margin-top: -675px;
+    width: 35%;
+    animation: fadeIn ease-in 1.75s;
+}

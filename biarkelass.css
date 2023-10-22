@@ -1,0 +1,296 @@
+@font-face {
+    font-family: SanFrancisco;
+    src: url(Fonts/SFUIText-RegularG2.otf);
+}
+
+@font-face{
+    font-family: LightFrancisco;
+    src : url(Fonts/SFUIDisplay-Light.ttf);
+}
+
+@font-face{
+    font-family: UniSans;
+    src: url(Fonts/Uni-Sans.otf);
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:white;
+    overflow-x: hidden;
+}
+
+nav{
+    overflow: hidden;
+    display: flex;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color:rgb(18, 18, 18);
+    justify-content: space-between;
+    font-family: LightFrancisco;
+    align-items:center;
+    height: 60px;
+}
+
+nav .navtitle{
+    margin-left: 13px;
+    font-family: UniSans;
+    letter-spacing: 3px;
+}
+
+nav ul{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: rgb(145, 145, 145);
+    justify-content: space-around;
+    text-decoration: none;
+    margin-right: 13px;
+}
+
+nav ul li a:hover{
+    color: rgb(214, 214, 214);
+}
+
+.section1{
+    color: rgb(219, 219, 219);
+    padding-top: 60px;
+    align-items: center;
+}
+
+.section1 h1{
+    font-family: SanFrancisco;
+    font-size: 60px;
+    text-align: center;
+}
+
+.section1 p{
+    font-family: LightFrancisco;
+    font-size: 18px;
+    text-align: center;
+}
+
+.imagehome{
+    width: 100%;
+    padding-left: 25rem;
+    animation: fadeIn ease-in 1s;
+}
+
+.scrollgif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    padding: 20%;
+    position: relative;
+    margin-top: -265px;
+    max-width: 70%;
+    height: 5rem;
+}
+
+.slider-wrapper{
+    position: absolute;
+    width: 60%;
+    padding-top: 110px;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    border-radius: 2rem;
+}
+
+.slider h4{
+    font-family: SanFrancisco;
+    font-size: 100px;
+    font-weight: bold;
+    padding-left: 3vh;
+    padding-top: 3vh;
+}
+
+.slider h4 p{
+    font-size: 25px;
+}
+.slider h4 a{
+    color: rgb(219, 219, 219);
+    text-decoration: none;
+    transition: color ease 200ms;
+}
+
+.slider h4 :hover{
+    color: rgb(255, 221, 51);
+}
+
+.supra{
+    flex: 1 0 100%;
+    scroll-snap-type: start;
+    object-fit: cover;
+}
+
+.nissan{
+    flex: 1 0 100%;
+    scroll-snap-type: start;
+    object-fit: cover;
+}
+
+.camaro{
+    flex: 1 0 100%;
+    scroll-snap-type: start;
+    object-fit: cover;
+}
+
+.gt86{
+    flex: 1 0 100%;
+    scroll-snap-type: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+.section2{
+    max-width: 100%;
+    background-color: rgb(20, 20, 20);
+    margin-top: -480px;
+    width: auto;
+    height: 95vh;
+}
+
+.section2 p{
+    font-family: SanFrancisco;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(219, 219, 219);
+    padding-left: 20%;
+    padding-top: 1.5%;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.feedback{
+    font-family: SanFrancisco;
+    margin-bottom: 125px;
+    overflow-x:hidden;
+}
+
+form{
+    max-width: 500px;
+    width: 90%;
+    background-color: rgb(12, 12, 12);
+    margin: 17vh auto 0 auto ;
+    padding: 40px;
+    border-radius: 1rem;
+}
+
+form h1{
+    margin: 0;
+    text-align: center;  
+}
+
+label{
+    display: block;
+    margin: 20px 0;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 5px solid rgb(115, 40, 255);
+}
+
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgb(83, 83, 83);
+}
+
+.center {
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background-color: rgb(100, 100, 100);
+    opacity: 50%;
+    transition: opacity ease 200ms;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+input[type="submit"]:hover{
+    opacity: 1;
+}
+
+.error{
+    color: red;
+}
+
+.error-border{
+    border-bottom: 5px solid red;
+}
+
+#success{
+    color: #89ffb6;
+}

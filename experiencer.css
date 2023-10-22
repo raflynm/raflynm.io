@@ -1,0 +1,125 @@
+@font-face {
+    font-family: SanFrancisco;
+    src: url(Fonts/SFUIText-RegularG2.otf);
+}
+
+@font-face{
+    font-family: LightFrancisco;
+    src : url(Fonts/SFUIDisplay-Light.ttf);
+}
+
+@font-face{
+    font-family: UniSans;
+    src: url(Fonts/Uni-Sans.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:white;
+}
+
+nav{
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color:rgb(18, 18, 18);
+    justify-content: space-between;
+    font-family: LightFrancisco;
+    align-items:center;
+    height: 60px;
+}
+
+nav .navtitle{
+    margin-left: 13px;
+    font-family: UniSans;
+    letter-spacing: 3px;
+}
+
+nav ul{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: rgb(145, 145, 145);
+    justify-content: space-around;
+    text-decoration: none;
+    margin-right: 13px;
+}
+
+nav ul li a:hover{
+    color: rgb(214, 214, 214);
+}
+
+.exptitle{
+    color: rgb(219, 219, 219);
+    padding-top: 80px;
+    align-items: center;
+}
+
+.exptitle h1{
+    font-family: SanFrancisco;
+    font-size: 60px;
+    text-align: center;
+}
+
+.wrapthis{
+    padding-top: 120px;
+    font-family: SanFrancisco;
+}
+
+@keyframes fadeInLeft{
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0px);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.isedesc{
+    padding-left: 37.5%;
+    animation: fadeInLeft ease-in 0.5s;
+}
+
+.iselogo img{
+    width: 10%;
+    padding-left: 25%;
+    margin-top: -135px;
+    animation: fadeIn ease-in 0.5s;
+}
+
+.tsfdesc{
+    padding-left: 37.5%;
+    padding-top: 150px;
+    animation: fadeInLeft ease-in 0.5s;
+}
+
+.tsflogo img{
+    width: 10%;
+    padding-left: 25%;
+    margin-top: -135px;
+    animation: fadeIn ease-in 0.5s;
+}
